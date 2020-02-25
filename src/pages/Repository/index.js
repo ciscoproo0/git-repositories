@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import Container from '../../components/container/index';
-import { Loading, Owner, IssueList } from './styles';
+import { Loading, Owner, IssueList, State } from './styles';
 
 export default class Repository extends Component {
   static propTypes = {
@@ -76,6 +76,7 @@ export default class Repository extends Component {
                 </strong>
                 <p>{issue.user.login}</p>
               </div>
+              <State> Open </State>
             </li>
           ))}
         </IssueList>

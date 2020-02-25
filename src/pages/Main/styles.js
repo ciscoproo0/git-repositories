@@ -6,11 +6,22 @@ export const Form = styled.form`
   flex-direction: row;
   input {
     flex: 1;
-    border: 1px solid #eee;
+    border: 1px solid ${props => (props.error ? 'red' : '#eee')};
     padding: 10px 15px;
     border-radius: 4px;
     font-size: 14px;
   }
+`;
+
+export const ErrorDiv = styled.div`
+  display: ${props => (props.error ? 'flex' : 'none')};
+  flex: 1;
+  background: #ffa29c;
+  border: 1px solid #734b5e;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
 `;
 
 const rotate = keyframes`

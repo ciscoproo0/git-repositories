@@ -9,6 +9,20 @@ export const Loading = styled.div`
   height: 100vh;
 `;
 
+export const State = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: blue;
+  max-width: 45px;
+  max-height: 5px;
+  border: 1px solid #8a8d91;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+`;
+
 export const Owner = styled.header`
   display: flex;
   flex-direction: column;
@@ -38,6 +52,8 @@ export const Owner = styled.header`
     line-height: 1.4;
     text-align: center;
     max-width: 400px;
+  }
+  span {
   }
 `;
 
