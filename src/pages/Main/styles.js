@@ -45,7 +45,6 @@ export const SubmitButton = styled.button.attrs(props => ({
 
   display: flex;
   justify-content: center;
-  align: center;
 
   &[disabled] {
     cursor: not-allowed;

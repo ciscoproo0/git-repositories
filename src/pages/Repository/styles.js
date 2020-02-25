@@ -9,20 +9,6 @@ export const Loading = styled.div`
   height: 100vh;
 `;
 
-export const State = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background: blue;
-  max-width: 45px;
-  max-height: 5px;
-  border: 1px solid #8a8d91;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-size: 14px;
-`;
-
 export const Owner = styled.header`
   display: flex;
   flex-direction: column;
@@ -113,5 +99,57 @@ export const IssueList = styled.ul`
         color: #8a8d91;
       }
     }
+  }
+`;
+
+export const Pages = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+
+  button {
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border: 1px solid #734b5e;
+    color: #fff;
+    background: #8a8d91;
+    border-radius: 4px;
+    font-size: 14px;
+
+    &:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+  }
+`;
+
+export const State = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+
+  button {
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 70px;
+    margin-left: 5px;
+    border: 1px solid #8a8d91;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .all {
+    background: #734b5e;
+  }
+  .open {
+    background: red;
+  }
+  .closed {
+    background: green;
   }
 `;
